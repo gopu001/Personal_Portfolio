@@ -1,0 +1,106 @@
+.about1{
+    width: 1300px;
+    height: calc(100vh - -100px);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .aboutContainer{
+        max-width: 1000px;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .leftImage{
+            width: 50%;
+
+            img{
+                width: 350px;
+                height: 450px;
+                object-fit: cover;
+                border-radius: 10px;
+                
+            }
+            @media(max-width:425px){
+                    display: none;
+            }
+        }
+        .rightText{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+
+            h2{
+                color: orange;
+                font-size: 40px;
+                font-weight: 700;
+
+                @media(max-width:1440px){
+                    font-size: 68px;
+                }
+
+                @media(max-width:425px){
+                    font-size: 98px;
+                }
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 28px;
+                color: #939396;
+
+                @media(max-width:425px){
+                    font-size: 31px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+            }
+            .contactME{
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+
+                button{
+                    outline: none;
+                     border:2px solid orange;
+                     font-size: 20px;
+                     padding: 5px 10px;
+                     color: #939396;
+                     border-radius: 10px;
+                     text-align: center;
+                     cursor: pointer;
+                     transition: 1s ease-in-out;
+                     
+                     &:hover{
+                        border: 2px solid #939396;
+                        color: orange;
+                     }
+
+                     @media(max-width:425px){
+                        font-size: 35px;
+                        padding: 8px 35px;
+                     }
+                    
+                }
+
+                @media(max-width:425px){
+                    gap: 30px;
+                }
+            }
+            @media(max-width:425px){
+                width: 90%;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
