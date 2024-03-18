@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 200px;    ///////margin-bottom:0px
+  
 
   .projectsMainContainer {
     max-width: 80%;
@@ -135,6 +135,9 @@
         gap: 131px;
       }
     }
+  }
+  @media(max-width:425px){
+    margin-top: 100px;
   }
 }
 
