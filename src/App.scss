@@ -24,10 +24,6 @@ html{
 section{
     height: 100vh;
     scroll-snap-align: center;
-    margin-bottom: 400px;
+    margin-bottom: 100px;
 
-
-    @media(max-width:425px){
-        height: 150vh;
-    }
 }

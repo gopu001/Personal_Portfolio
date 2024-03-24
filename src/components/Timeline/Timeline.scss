@@ -1,70 +1,70 @@
-.timelineMainContainer{
-    width: 1300px;
-    height: calc(100vh - -100px);
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   margin-bottom: 200px;    /////margin-bottom:0
-.timeline {
+.timelineMainContainer {
   width: 1300px;
-  height: 90vh;
+  height: calc(100vh - -100px);
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  h2{
-    color: orange;
-    font-size: 50px;
-    font-weight: 700;
-
-    @media(max-width:425px){
-font-size: 98px;
-    }
-  }
-
-  .timelineContainer {
-    width: 1000px;
-    height: 100vh;
+  margin-bottom: 200px; /////margin-bottom:0
+  .timeline {
+    width: 1300px;
+    height: 90vh;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 40px;
     justify-content: center;
     align-items: center;
 
-    .eachContainer {
+    h2 {
+      color: orange;
+      font-size: 50px;
+      font-weight: 700;
+
+      @media (max-width: 425px) {
+        font-size: 98px;
+      }
+    }
+
+    .timelineContainer {
+      width: 1000px;
+      height: 100vh;
+      margin: auto;
       display: flex;
-      gap: 30px;
+      flex-direction: column;
+      gap: 40px;
       justify-content: center;
       align-items: center;
 
-      .image {
-        width: 50%;
+      .eachContainer {
         display: flex;
+        gap: 30px;
         justify-content: center;
         align-items: center;
-    
-        img {
+
+        .image {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
             width: 250px;
             height: 150px;
             object-fit: contain;
             border-radius: 7px;
+          }
         }
-    }
-      .description {
-        width: 50%;
+        .description {
+          width: 50%;
 
-        p{
+          p {
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
             color: #939396;
 
-            @media(max-width:425px){
+            @media (max-width: 425px) {
               font-size: 30px;
               line-height: 35px;
               // font-weight: 500;
@@ -76,25 +76,19 @@ font-size: 98px;
                 height: 0;
               }
             }
+          }
+        }
+
+        &:nth-child(odd) {
+          display: flex;
+          flex-direction: row;
+        }
+
+        &:nth-child(even) {
+          display: flex;
+          flex-direction: row-reverse;
         }
       }
-        
-
-      &:nth-child(odd){
-        display: flex;
-        flex-direction: row;
     }
-
-    &:nth-child(even){
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    }
-
-    
-
-    
   }
-}
 }
