@@ -3,7 +3,7 @@ import github from "../../assets/github1.png";
 import linkedin from "../../assets/linkedin1.png";
 import profileImg from "../../assets/profileImg.png";
 import frontendImg from "../../assets/frontendImgpng.png";
-import resume from "../../assets/GopuNikhilResume.pdf";
+import resume from "../../assets/GOPU_NIKHIL(RESUME).pdf";
 import { motion } from "framer-motion";
 
 const leftVariants = {
